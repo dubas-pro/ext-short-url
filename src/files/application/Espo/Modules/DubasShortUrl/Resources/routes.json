@@ -1,0 +1,12 @@
+[
+    {
+        "route": "/l/:link",
+        "method": "get",
+        "params": {
+            "controller": "ShortUrl",
+            "action": "redirect",
+            "link": ":link"
+        },
+        "noAuth": true
+    }
+]

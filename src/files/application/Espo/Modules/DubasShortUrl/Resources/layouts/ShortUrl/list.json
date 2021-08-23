@@ -1,0 +1,15 @@
+[
+    {
+        "name": "name",
+        "link": true
+    },
+    {
+        "name": "shortUrl"
+    },
+    {
+        "name": "clicks"
+    },
+    {
+        "name": "createdAt"
+    }
+]

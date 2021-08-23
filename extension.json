@@ -1,0 +1,14 @@
+{
+    "module": "DubasShortUrl",
+    "name": "Dubas Short Url",
+    "description": "Create short url's inside EspoCRM. Support: contact@dubas.pro | [Documentation](https://docs.dubas.pro)",
+    "author": "DUBAS - contact@dubas.pro",
+    "acceptableVersions": [
+        ">=6.1.0"
+    ],
+    "php": [
+        ">=7.3"
+    ],
+    "releaseDate": "2021-08-23",
+    "checkVersionUrl": "https://devcrm.it"
+}

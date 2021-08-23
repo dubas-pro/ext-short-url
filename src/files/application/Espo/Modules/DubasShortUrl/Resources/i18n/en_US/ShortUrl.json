@@ -1,0 +1,13 @@
+{
+    "fields": {
+        "clicks": "Clicks",
+        "alias": "Alias",
+        "name": "Full Url",
+        "expirationDate": "Expiration Date",
+        "shortUrl": "Short Url"
+    },
+    "links": [],
+    "labels": {
+        "Create ShortUrl": "Create Short Url"
+    }
+}

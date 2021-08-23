@@ -1,0 +1,24 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "shortUrl"
+                }
+            ],
+            [
+                {
+                    "name": "alias"
+                },
+                {
+                    "name": "expirationDate"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    }
+]
