@@ -45,8 +45,7 @@ class GenerateAlias implements BeforeSave
     public function beforeSave(Entity $entity, SaveOptions $options): void
     {
         $toProcess =
-            !$entity->get('alias') ||
-            $entity->isAttributeChanged('alias');
+            !$entity->get('alias');
 
         if (!$toProcess) {
             return;
