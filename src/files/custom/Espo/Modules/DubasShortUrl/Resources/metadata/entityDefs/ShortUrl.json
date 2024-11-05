@@ -1,7 +1,7 @@
 {
     "fields": {
         "name": {
-            "type": "varchar",
+            "type": "url",
             "required": true,
             "maxLength": 300,
             "trim": true
