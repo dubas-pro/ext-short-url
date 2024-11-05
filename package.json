@@ -2,21 +2,29 @@
     "name": "espocrm-ext-dubas-short-url",
     "version": "0.0.2",
     "description": "",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "eslint:fix": "eslint --fix src/**/src/**/*.js"
+    "engines": {
+        "npm": ">=7",
+        "node": ">=15"
     },
-    "author": "DUBAS - contact@dubas.pro",
+    "scripts": {
+        "js:fix": "eslint --fix src/**/src/**/*.js",
+        "json:fix": "prettier --write src/**/*.json",
+        "php:fix": "composer exec ecs -- --fix --clear-cache",
+        "phpstan": "composer exec phpstan -- --xdebug",
+        "rector": "composer exec rector -- --clear-cache",
+        "fix:all": "npm run js:fix && npm run json:fix && npm run php:fix",
+        "json:sort": "jsonsort --indentationCount 4 src/**/Resources/i18n/** src/**/Resources/metadata/scopes/**"
+    },
+    "type": "module",
+    "author": "dubas s.c. - contact@dubas.pro",
     "license": "GPL-3.0",
     "dependencies": {
-        "archiver": "^4.0.1",
-        "fs-extra": "^9.0.0",
-        "mv": "^2.1.1",
-        "request": "^2.88.2",
-        "unzipper": "^0.10.11"
-    },
-    "devDependencies": {
+        "@babel/eslint-parser": "^7.23.3",
         "eslint": "^7.25.0",
-        "eslint-plugin-header": "^3.1.1"
+        "eslint-plugin-header": "^3.1.1",
+        "espo-extension-tools": "github:espocrm/extension-tools#0.1.8",
+        "fs-extra": "^9.0.0",
+        "json-sort-cli": "^4.0.3",
+        "prettier": "^2.6.2"
     }
 }

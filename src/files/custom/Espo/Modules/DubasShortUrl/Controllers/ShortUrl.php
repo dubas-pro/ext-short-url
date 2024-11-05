@@ -27,38 +27,4 @@ use Espo\Core\Exceptions\NotFound;
 
 class ShortUrl extends \Espo\Core\Templates\Controllers\Base
 {
-    /**
-     *  GET api/v1/l/001
-     */
-    public function getActionRedirect($params, $data, $request, $response)
-    {
-        if (empty($params['link'])) {
-            return 'Wrong link.';
-            throw new BadRequest('Wrong link.');
-        }
-
-        $entityManager = $this->getEntityManager();
-
-        $link = $params['link'];
-        $record = $entityManager->getRepository('ShortUrl')->where([
-            'alias' => $link,
-        ])->findOne();
-
-        if (!$record) {
-            throw new NotFound("We couldn't find link.");
-        }
-
-        $expirationDate = $record->get('expirationDate');
-        $today = date('Y-m-d');
-        if (!empty($expirationDate) && $today >= $expirationDate) {
-            return 'Link expired.';
-        }
-
-        $clicks = $record->get('clicks');
-        $record->set('clicks', ++$clicks);
-        $entityManager->saveEntity($record);
-
-        $response->setHeader('Location', $record->get('name'));
-        return true;
-    }
 }

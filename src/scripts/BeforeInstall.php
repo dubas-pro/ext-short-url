@@ -4,7 +4,7 @@ use Espo\Core\Container;
 use Espo\Core\DataManager;
 use Exception;
 
-class AfterInstall
+class BeforeInstall
 {
     private Container $container;
 

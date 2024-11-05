@@ -4,19 +4,18 @@
         "branch": "stable"
     },
     "database": {
-        "driver": "pdo_mysql",
-        "host": "localhost",
-        "port": "",
+        "host": "db",
+        "port": null,
         "charset": "utf8mb4",
-        "dbname": "ext-dubas-short-url",
+        "dbname": "espocrm",
         "user": "root",
         "password": ""
     },
     "install": {
         "language": "en_US",
-        "defaultOwner": "www-data",
-        "defaultGroup": "www-data",
-        "siteUrl": "http://localhost/ext-dubas-short-url/site",
+        "defaultOwner": "",
+        "defaultGroup": "",
+        "siteUrl": "http://localhost:8080",
         "adminUsername": "admin",
         "adminPassword": "1"
     }

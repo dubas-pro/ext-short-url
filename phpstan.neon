@@ -1,0 +1,21 @@
+includes:
+  - vendor/phpstan/phpstan-phpunit/extension.neon
+
+parameters:
+  phpVersion: 80100  # PHP 8.1
+  level: 8
+  paths:
+    - src
+    - tests
+
+  excludePaths:
+    analyse:
+      - site
+      - src/*/vendor/*
+
+  bootstrapFiles:
+    - site/bootstrap.php
+
+  inferPrivatePropertyTypeFromConstructor: true
+  treatPhpDocTypesAsCertain: false
+  reportUnmatchedIgnoredErrors: false

@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "*": ["site/client/src/*"],
+            "modules/crm/*": ["site/client/modules/crm/src/*"],
+            "crm:*": ["site/client/modules/crm/src/*"],
+            "modules/dubas-short-url/*": ["src/files/client/custom/modules/dubas-short-url/src/*"],
+            "dubas-short-url:*": ["src/files/client/custom/modules/dubas-short-url/src/*"]
+        },
+        "module": "ES6",
+        "target": "ES2018"
+    },
+    "exclude": [
+        "**/.cache",
+        "**/.git",
+        "**/build",
+        "**/lib/transpiled",
+        "**/node_modules",
+        "**/site",
+        "**/vendor"
+    ]
+}

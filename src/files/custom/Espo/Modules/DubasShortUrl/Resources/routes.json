@@ -1,0 +1,8 @@
+[
+    {
+        "route": "/l/:link",
+        "method": "get",
+        "actionClassName": "Espo\\Modules\\DubasShortUrl\\Tools\\ShortUrl\\Service",
+        "noAuth": true
+    }
+]

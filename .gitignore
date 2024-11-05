@@ -6,16 +6,45 @@ project.properties
 .project
 .settings*
 .idea
-.vscode
 *.sublime-project
 *.sublime-workspace
 .sublimelinterrc
 *.swp
 
 build/
+html/
 site/
-vendor/
+!src/**/site/
+!src/**/html/
 tests/integration/config.php
-node_modules
-config.json
-config.php
+.env
+/config.json
+/config.php
+/extensions/
+
+src/files/client/custom/src/
+src/files/custom/Espo/Custom/
+
+# Package Managers
+.eslintcache
+.pnpm-store/
+node_modules/
+vendor/
+
+# Docker
+docker-compose.override.yml
+
+# Extension Directory
+src/**/client/**/lib/*
+
+# +----------------------------+
+# |    Keep .gitkeep files     |
+# +----------------------------+-------------------------------+
+# | To keep an empty directory, add a .gitkeep file to it      |
+# | and ignore the directory with a wildcard:                  |
+# |                                                            |
+# |     /path/to/dir/*                                         |
+# |                                                            |
+# | this will ignore the content but not the director itself.  |
+# +------------------------------------------------------------+
+!/**/.gitkeep
