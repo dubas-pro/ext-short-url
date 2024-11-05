@@ -1,6 +1,6 @@
 {
     "name": "espocrm-ext-dubas-short-url",
-    "version": "0.0.2",
+    "version": "1.0.0",
     "description": "",
     "engines": {
         "npm": ">=7",
