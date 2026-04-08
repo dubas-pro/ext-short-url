@@ -44,7 +44,10 @@ class Service implements Action
         }
 
         $clicks = $record->get('clicks');
-        $record->set('clicks', ++$clicks);
+        $record->set([
+            'clicks' => ++$clicks,
+            'lastUsedAt' => date('Y-m-d H:i:s'),
+        ]);
         $this->entityManager->saveEntity($record);
 
         header('Location: ' . $record->get('name'), true, 302); exit;

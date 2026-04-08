@@ -57,6 +57,10 @@
             "type": "url",
             "readOnly": true,
             "isCustom": true
+        },
+        "lastUsedAt": {
+            "type": "datetime",
+            "readOnly": true
         }
     },
     "links": {
