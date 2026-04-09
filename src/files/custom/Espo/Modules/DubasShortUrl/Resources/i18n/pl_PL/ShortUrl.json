@@ -1,0 +1,14 @@
+{
+    "fields": {
+        "clicks": "Kliknięcia",
+        "alias": "Alias",
+        "name": "Pełny URL",
+        "expirationDate": "Data wygaśnięcia",
+        "shortUrl": "Skrócony URL",
+        "lastUsedAt": "Ostatnio używany"
+    },
+    "links": [],
+    "labels": {
+        "Create ShortUrl": "Utwórz skrócony link"
+    }
+}

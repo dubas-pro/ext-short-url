@@ -4,7 +4,8 @@
         "alias": "Alias",
         "name": "Full Url",
         "expirationDate": "Expiration Date",
-        "shortUrl": "Short Url"
+        "shortUrl": "Short Url",
+        "lastUsedAt": "Last Used At"
     },
     "links": [],
     "labels": {
