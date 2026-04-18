@@ -43,6 +43,13 @@ class Service implements Action
             throw new Error('Link expired.');
         }
 
+        $queryParams = $request->getQueryParams();
+        $queryString = '';
+
+        if (count($queryParams) > 0) {
+            $queryString = '?' . http_build_query($queryParams);
+        }
+
         $clicks = $record->get('clicks');
         $record->set([
             'clicks' => ++$clicks,
@@ -50,6 +57,6 @@ class Service implements Action
         ]);
         $this->entityManager->saveEntity($record);
 
-        header('Location: ' . $record->get('name'), true, 302); exit;
+        header('Location: ' . $record->get('name') . $queryString, true, 302); exit;
     }
 }
